@@ -23,3 +23,8 @@ body {
   .experiment-series {
     margin-bottom: 20px;
   }
+  body, h1, h2, h3, p, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
