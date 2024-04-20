@@ -21,6 +21,7 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
+  border:#126130 4px solid;
 }
 
 .main-content {
