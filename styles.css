@@ -1,73 +1,96 @@
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  /* Flex box from MI 349 */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+}
+
+.experiments-list {
+  width: 75%;
+  padding-right: 20px;
+}
+
+.experiment-category {
+  margin-bottom: 20px;
+}
+
+.experiments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.experiment {
+  flex-basis: calc(50% - 10px);
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.experiment img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.experiment-info h3 {
+  margin-top: 10px;
+}
+
+.experiment-details {
+  width: 25%;
+  background-color: #fff;
+  padding: 20px;
+  border-left: 4px solid #005A9C;
+}
+
+.status {
+  background-color: #005A9C;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
   .main-content {
-    display: flex;
-  }
-  .main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .experiment-series {
-    margin-bottom: 20px;
-  }
-  body, h1, h2, h3, p, span {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    flex-direction: column;
   }
 
-  .experiment-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  .experiments-list {
+    width: 100%;
+    padding-right: 0;
   }
-  
+
   .experiment {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .experiment img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-  }
-  
-  .experiment span {
-    display: block;
-    margin-top: 10px;
-  }
-  
-  .experiment-details {
     flex-basis: 100%;
-    background-color: #fff;
-    padding: 20px;
-    border-left: 10px solid #005A9C;
   }
-  
-  @media (max-width: 768px) {
-    .experiment-series {
-      flex-basis: 100%;
-    }
-    
-    .experiment-grid {
-      grid-template-columns: 1fr;
-    }
+
+  .experiment-details {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
