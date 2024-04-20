@@ -12,3 +12,11 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
+  .main {
+    padding: 20px;
+  }
+  
+  .experimentseries {
+    margin-bottom: 20px;
+  }
