@@ -44,8 +44,9 @@ header {
 
 .experiment {
   flex-basis: calc(50% - 10px); 
-  background-color: #fff;
+  background-color: #126130;
   text-align: center;
+  color: #fff;
 }
 
 .experiment img {
