@@ -66,9 +66,11 @@ header {
 
 .experiment-details {
   width: 300px; 
-  background-color: #333;
+  background-color: #333; 
   padding: 20px;
   border-left: 4px solid #126130;
+  color: #fff; 
+ 
 }
 
 .status {
